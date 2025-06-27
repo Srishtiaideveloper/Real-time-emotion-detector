@@ -1,4 +1,4 @@
-# Real-Time Emotion Detection 
+# Real-Time Emotion Detection
 
 **Author:** Srishti Bisht  
 **Date:** June 2025  
@@ -8,74 +8,61 @@
 
 ## 📌 Project Overview
 
-This project is a real-time facial emotion recognition system that leverages a custom-trained Convolutional Neural Network (CNN) and live webcam feed. It accurately detects seven basic emotions—**Happy, Sad, Angry, Surprise, Fear, Disgust, and Neutral**—directly from human facial expressions using OpenCV and Streamlit.
+This project is a real-time facial emotion recognition system powered by a custom-trained Convolutional Neural Network (CNN) and integrated with webcam feed using OpenCV. It accurately detects seven fundamental human emotions—**Happy, Sad, Angry, Surprise, Fear, Disgust, and Neutral**—from facial expressions.
 
-> ⚡ Achieved over **90% accuracy** on the FER2013 dataset.  
-> 🧠 Gained hands-on experience in **deep learning**, **computer vision**, and **model deployment**.
+> ⚡ Achieved over **90% accuracy** on the FER2013 benchmark dataset  
+> 🧠 Gained practical experience in **deep learning**, **computer vision**, and **model deployment**
 
 ---
 
 ## ✅ Features
 
-- 🔍 **Real-Time Webcam Detection** using OpenCV
-- 📊 **Streamlit Web App Interface** for user-friendly interaction
-- 💡 Handles **lighting variations** and **different head orientations**
-- 🧠 Trained on **FER2013**, a robust and diverse facial expression dataset
-- 🎯 Optimized CNN architecture for performance and accuracy
+- 📸 **Real-Time Emotion Detection** using webcam (OpenCV)
+- 🌐 **Streamlit Web App Interface** for easy interaction
+- 💡 Robust to **lighting variations** and **head orientation**
+- 📊 Built on the **FER2013** dataset, known for real-world facial variability
+- 🧠 Lightweight CNN model for quick inference on CPU
 
 ---
 
 ## 🧠 Model Architecture
 
-A custom CNN with multiple convolutional and pooling layers was trained to extract spatial features from grayscale facial images. The model was fine-tuned using:
+The emotion classifier uses a custom CNN architecture designed to balance performance and inference speed:
 
-- **Dropout** for regularization  
-- **Adam optimizer**  
-- **ReLU activations**  
-- Final layer with **Softmax** over 7 classes  
+- Multiple **Conv2D + ReLU + MaxPooling** layers
+- **Dropout** regularization to reduce overfitting
+- Final **Dense layer** with **Softmax** for multi-class classification (7 classes)
+- Optimized using **Adam** optimizer with **Categorical Crossentropy** loss
 
-Optional: Transfer learning experiments were also done using **MobileNetV2** and **ResNet18** for benchmarking.
+> ✨ Transfer Learning Benchmarks were also conducted using **MobileNetV2** and **ResNet18**
 
 ---
 
 ## 📁 Dataset
 
-The model is trained on the [FER2013](https://www.kaggle.com/datasets/msambare/fer2013) dataset which consists of:
+The model was trained on the [FER2013 Dataset](https://www.kaggle.com/datasets/msambare/fer2013):
 
-- 🧑‍🤝‍🧑 35,887 grayscale facial images (48x48 pixels)  
-- 🔍 Labeled with 7 emotion classes  
-- 🧪 Split into training, validation, and test sets
+- 🧑‍🤝‍🧑 35,887 grayscale facial images (48x48 px)
+- 📂 Labeled across 7 emotion categories
+- 🔁 Train/Validation/Test splits provided
+- 🧪 Used data augmentation to improve generalization
 
 ---
-📊 Model Architecture
-The CNN consists of:
 
-Convolutional layers (3x3 filters)
+## 📊 Performance Metrics
 
-ReLU activations
+| Emotion    | Precision | Recall | F1-Score |
+|------------|:---------:|:------:|:--------:|
+| Angry      |   0.88    |  0.87  |   0.87   |
+| Disgust    |   0.91    |  0.90  |   0.90   |
+| Fear       |   0.89    |  0.90  |   0.89   |
+| Happy      |   0.94    |  0.95  |   0.94   |
+| Sad        |   0.90    |  0.89  |   0.89   |
+| Surprise   |   0.93    |  0.92  |   0.92   |
+| Neutral    |   0.91    |  0.91  |   0.91   |
+| **Overall**| **~90.2%**|   —    |    —     |
 
-MaxPooling layers
-
-Fully connected layers
-
-Final softmax output over 7 classes
-
-Loss Function: Categorical Crossentropy
-Optimizer: Adam (lr=0.001)
-Metrics: Accuracy
-
-##🧪 Performance
-Emotion	Precision	Recall	F1-Score
-Angry	0.88	0.87	0.87
-Disgust	0.91	0.90	0.90
-Fear	0.89	0.90	0.89
-Happy	0.94	0.95	0.94
-Sad	0.90	0.89	0.89
-Surprise	0.93	0.92	0.92
-Neutral	0.91	0.91	0.91
-
-📌 Overall Accuracy: ~90.2%
-
+---
 
 ## 🛠️ Installation & Setup
 
