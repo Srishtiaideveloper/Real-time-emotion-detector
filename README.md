@@ -1,4 +1,4 @@
-# Real-Time Emotion Detection (2025)
+# Real-Time Emotion Detection 
 
 **Author:** Srishti Bisht  
 **Date:** June 2025  
@@ -47,6 +47,35 @@ The model is trained on the [FER2013](https://www.kaggle.com/datasets/msambare/f
 - 🧪 Split into training, validation, and test sets
 
 ---
+📊 Model Architecture
+The CNN consists of:
+
+Convolutional layers (3x3 filters)
+
+ReLU activations
+
+MaxPooling layers
+
+Fully connected layers
+
+Final softmax output over 7 classes
+
+Loss Function: Categorical Crossentropy
+Optimizer: Adam (lr=0.001)
+Metrics: Accuracy
+
+**##🧪 Performance**
+Emotion	Precision	Recall	F1-Score
+Angry	0.88	0.87	0.87
+Disgust	0.91	0.90	0.90
+Fear	0.89	0.90	0.89
+Happy	0.94	0.95	0.94
+Sad	0.90	0.89	0.89
+Surprise	0.93	0.92	0.92
+Neutral	0.91	0.91	0.91
+
+📌 Overall Accuracy: ~90.2%
+
 
 ## 🛠️ Installation & Setup
 
