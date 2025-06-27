@@ -64,7 +64,7 @@ Loss Function: Categorical Crossentropy
 Optimizer: Adam (lr=0.001)
 Metrics: Accuracy
 
-**##🧪 Performance**
+##🧪 Performance
 Emotion	Precision	Recall	F1-Score
 Angry	0.88	0.87	0.87
 Disgust	0.91	0.90	0.90
