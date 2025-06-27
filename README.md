@@ -1,93 +1,57 @@
-Real-Time Human Emotion Detection
+# Real-Time Emotion Detection (2025)
 
-Description
+**Author:** Srishti Bisht  
+**Date:** June 2025  
+**Tech Stack:** Python, OpenCV, Streamlit, CNN, FER2013  
 
-This project is a Streamlit-based web application for detecting human emotions in real-time through webcam feed. It uses OpenCV for face detection, TensorFlow for the emotion recognition model, and a pre-trained model trained on the FER2013 dataset. The application can recognize emotions like Angry, Happy, Sad, Surprise, Fear, Neutral, and Disgust.
+---
 
+## 📌 Project Overview
 
+This project is a real-time facial emotion recognition system that leverages a custom-trained Convolutional Neural Network (CNN) and live webcam feed. It accurately detects seven basic emotions—**Happy, Sad, Angry, Surprise, Fear, Disgust, and Neutral**—directly from human facial expressions using OpenCV and Streamlit.
 
-Table of Contents
+> ⚡ Achieved over **90% accuracy** on the FER2013 dataset.  
+> 🧠 Gained hands-on experience in **deep learning**, **computer vision**, and **model deployment**.
 
+---
 
-1.Installation
+## ✅ Features
 
+- 🔍 **Real-Time Webcam Detection** using OpenCV
+- 📊 **Streamlit Web App Interface** for user-friendly interaction
+- 💡 Handles **lighting variations** and **different head orientations**
+- 🧠 Trained on **FER2013**, a robust and diverse facial expression dataset
+- 🎯 Optimized CNN architecture for performance and accuracy
 
-2.Usage
+---
 
+## 🧠 Model Architecture
 
-3.Features
+A custom CNN with multiple convolutional and pooling layers was trained to extract spatial features from grayscale facial images. The model was fine-tuned using:
 
+- **Dropout** for regularization  
+- **Adam optimizer**  
+- **ReLU activations**  
+- Final layer with **Softmax** over 7 classes  
 
-4.Technologies Used
+Optional: Transfer learning experiments were also done using **MobileNetV2** and **ResNet18** for benchmarking.
 
+---
 
-5.Contributing
+## 📁 Dataset
 
+The model is trained on the [FER2013](https://www.kaggle.com/datasets/msambare/fer2013) dataset which consists of:
 
-6.Contact
+- 🧑‍🤝‍🧑 35,887 grayscale facial images (48x48 pixels)  
+- 🔍 Labeled with 7 emotion classes  
+- 🧪 Split into training, validation, and test sets
 
+---
 
-1.Installation
+## 🛠️ Installation & Setup
 
-A. Clone this repository:
+### Step 1: Clone the Repository
 
-git clone https://github.com/shahabas123/Real-Time-Human-Emotion-Detection.git
-
-
-B. Navigate to the project directory:
-
-cd Real-Time-Human-Emotion-Detection
-
-
-C. Install the required packages:
-
-pip install -r requirements.txt
-
-D. Ensure you have the required Haarcascade XML file in the correct path.
-
-
-2.Usage
-
-Run the Streamlit application:  streamlit run app.py
-
-Go to the Live Detection section to start webcam-based real-time emotion detection.
-
-Use the Stop Webcam button to terminate the detection.
-
-
-3.Features
-
---Real-time emotion detection from webcam feed.
-
---Detects 7 distinct emotions: Angry, Disgust, Fear, Happy, Neutral, Sad, Surprise.
-
---Intuitive and user-friendly interface.
-
---Uses a deep learning model trained on the FER2013 dataset.
-
-
-4.Technologies Used
-
--Streamlit
-
--OpenCV
-
--TensorFlow & Keras
-
--Python
-
--Deep Learning
-
-
-5.Contributing
-
-Feel free to open issues or submit pull requests. Contributions are welcome!
-
-
-6.Contact
-
-Email: shahabasali751@gmail.com
-
-GitHub: https://github.com/shahabas123
-
-LinkedIn: https://www.linkedin.com/in/shahabas-ali-8-/
+```bash
+git clone https://github.com/Srishtiaideveloper/real-time-emotion-detector.git
+cd real-time-emotion-detector
