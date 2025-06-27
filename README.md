@@ -1,6 +1,6 @@
 # Real-Time Emotion Detection
 
-**Author:** Srishti  
+**Developed By:** Srishti  
 **Date:** June 2025  
 **Tech Stack:** Python, OpenCV, Streamlit, CNN, FER2013   
 
