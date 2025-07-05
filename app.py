@@ -121,15 +121,6 @@ def main():
         
 
         
-    elif page == "Contact":
-        st.title("Contact Me 📧")
-        st.markdown("""
-                    Have questions or feedback? Feel free to reach out!
-                    """)
-        st.write("Email: shahabasali751@gmail.com.com")
-        st.write("GitHub: [GitHub](https://github.com/shahabas123)")
-        st.write("LinkedIn: [LinkedIn](https://www.linkedin.com/in/shahabas-ali-8-/)")    
-        
 
 
 
